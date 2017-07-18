@@ -27,3 +27,5 @@ extensions:
     enabled: false
   transitfeeds:
     enabled: false
+  datagouvfr:
+    enabled: true
