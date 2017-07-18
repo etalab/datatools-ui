@@ -207,6 +207,7 @@ ProjectSettings:
   deleteProject: Delete Project?
   general:
     title: General
+    name: Project name
     location:
       title: Location
       defaultLocation: Default location (lat, lng)
@@ -221,6 +222,10 @@ ProjectSettings:
     buildConfig:
       title: Build Config
       fetchElevationUS: Fetch Elevation
+      elevationBucket:
+        bucketName: S3 Bucket Name
+        accessKey: Access Key
+        secretKey: Secret Key
       stationTransfers: Sta. Transfers
       subwayAccessTime: Subway Access Time
       fares: Fares
@@ -232,6 +237,15 @@ ProjectSettings:
       carDropoffTime: Car Dropoff Time
       brandingUrlRoot: Branding URL Root
       requestLogFile: Request log file
+      updaters:
+        title: Real-time updaters
+        new: Add updater
+        $index:
+          type: Type
+          frequencySec: Frequency (in seconds)
+          sourceType: Source type
+          url: URL
+          defaultAgencyId: Default agency ID
     servers:
       title: Servers
       new: Add server
