@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-The application consists of two repositories: a [Spark-powered Java backend](https://github.com/conveyal/datatools-server) and a [Javascript frontend written with React and Redux](https://github.com/conveyal/datatools-ui). To install and deploy the application, you will need Java 8, Maven, Node/npm, yarn, and [mastarm](https://github.com/conveyal/mastarm).
+The application consists of two repositories: a [Spark-powered Java backend](https://github.com/conveyal/datatools-server) and a [Javascript frontend written with React and Redux](https://github.com/conveyal/datatools-ui). To install and deploy the application, you will need Java 8, Maven, Node lts/boron, npm, yarn, and [mastarm](https://github.com/conveyal/mastarm).
 
 User authentication is done via [Auth0](http://auth0.com). You will need an Auth0 account and application to use the Data Manager.
 
