@@ -11,8 +11,8 @@ User authentication is done via [Auth0](http://auth0.com). You will need an Auth
 Clone the repo and change to the project directory:
 
 ```bash
-$ git clone https://github.com/etalab/datatools-ui.git
-$ git clone https://github.com/etalab/datatools-server.git
+$ git clone https://github.com/conveyal/datatools-ui.git
+$ git clone https://github.com/conveyal/datatools-server.git
 ```
 
 Copy the included configuration `env` templates for both the server and UI repos:
@@ -125,10 +125,10 @@ Package the application using Maven:
 $ mvn package
 ```
 
-Deploy the application with Java:
+Serve the application with Java:
 
 ```bash
-$ java -jar target/dt-v1.0.0.jar /path/to/env.yml /path/to/server.yml
+$ java -jar target/dt-`git rev-parse --short HEAD`.jar configurations/default/env.yml configurations/default/server.yml
 ```
 
 
