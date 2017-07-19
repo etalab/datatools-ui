@@ -25,6 +25,7 @@ dist
 assets
 
 # Secret config files
+.env
 env.yml
 env.yml-original
-.env
+settings.yml
