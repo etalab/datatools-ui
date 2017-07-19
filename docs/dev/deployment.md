@@ -106,6 +106,12 @@ To allow for the creation, deletion and editing of users you must generate a tok
 
 ## Building and Running the Application
 
+Install yarn:
+
+```bash
+$ npm i -g yarn
+```
+
 Install the Javascript dependencies using yarn:
 
 ```bash
