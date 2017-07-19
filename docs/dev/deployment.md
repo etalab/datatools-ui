@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-The application consists of two repositories: a [Spark-powered Java backend](https://github.com/conveyal/datatools-server) and a [Javascript frontend written with React and Redux](https://github.com/conveyal/datatools-ui). To install and deploy the application, you will need Java 8, Maven, Node <7, npm, yarn, and [mastarm](https://github.com/conveyal/mastarm).
+The application consists of two repositories: a [Spark-powered Java backend](https://github.com/conveyal/datatools-server) and a [Javascript frontend written with React and Redux](https://github.com/conveyal/datatools-ui). To install and deploy the application, you will need Java 8, Maven, Node/npm, yarn, and [mastarm](https://github.com/conveyal/mastarm).
 
 User authentication is done via [Auth0](http://auth0.com). You will need an Auth0 account and application to use the Data Manager.
 
@@ -11,20 +11,15 @@ User authentication is done via [Auth0](http://auth0.com). You will need an Auth
 Clone the repo and change to the project directory:
 
 ```bash
-$ git clone https://github.com/etalab/datatools-ui.git
-$ git clone https://github.com/etalab/datatools-server.git
+$ git clone https://github.com/conveyal/datatools-ui.git
+$ git clone https://github.com/conveyal/datatools-server.git
 ```
 
-Copy the included configuration `env`, `settings` and `server` templates for both the server and UI repos:
+Copy the included configuration `env` templates for both the server and UI repos:
 
 ```bash
-# UI
 $ cp datatools-ui/configurations/default/env.yml.tmp datatools-ui/configurations/default/env.yml
-$ cp datatools-ui/configurations/default/settings.yml.tmp datatools-ui/configurations/default/settings.yml
-
-# Server
 $ cp datatools-server/configurations/default/env.yml.tmp datatools-server/configurations/default/env.yml
-$ cp datatools-server/configurations/default/server.yml.tmp datatools-server/configurations/default/server.yml
 ```
 
 You'll then need to supply Auth0 account information (see below) and API keys for various services used in the application.
@@ -111,12 +106,6 @@ To allow for the creation, deletion and editing of users you must generate a tok
 
 ## Building and Running the Application
 
-Install yarn:
-
-```bash
-$ npm i -g yarn
-```
-
 Install the Javascript dependencies using yarn:
 
 ```bash
@@ -127,6 +116,7 @@ Build and deploy the frontend to s3 using npm script (which calls [mastarm](http
 
 ```bash
 $ npm run deploy -- s3://$S3_BUCKET_NAME/dist
+>>>>>>> Stashed changes
 ```
 
 Package the application using Maven:
@@ -135,10 +125,10 @@ Package the application using Maven:
 $ mvn package
 ```
 
-Deploy the application with Java:
+Serve the application with Java:
 
 ```bash
-$ java -jar target/dt-v1.0.0.jar /path/to/env.yml /path/to/server.yml
+$ java -jar target/dt-`git rev-parse --short HEAD`.jar configurations/default/env.yml configurations/default/server.yml
 ```
 
 
