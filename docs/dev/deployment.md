@@ -116,7 +116,6 @@ Build and deploy the frontend to s3 using npm script (which calls [mastarm](http
 
 ```bash
 $ npm run deploy -- s3://$S3_BUCKET_NAME/dist
->>>>>>> Stashed changes
 ```
 
 Package the application using Maven:
