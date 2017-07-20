@@ -22,7 +22,6 @@ tmp/
 configurations/*
 !configurations/default
 dist
-assets
 
 # Secret config files
 .env
