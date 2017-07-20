@@ -15,11 +15,16 @@ $ git clone https://github.com/conveyal/datatools-ui.git
 $ git clone https://github.com/conveyal/datatools-server.git
 ```
 
-Copy the included configuration `env` templates for both the server and UI repos:
+Copy the included configuration `env`, `settings` and `server` templates for both the server and UI repos:
 
 ```bash
+# UI
 $ cp datatools-ui/configurations/default/env.yml.tmp datatools-ui/configurations/default/env.yml
+$ cp datatools-ui/configurations/default/settings.yml.tmp datatools-ui/configurations/default/settings.yml
+
+# Server
 $ cp datatools-server/configurations/default/env.yml.tmp datatools-server/configurations/default/env.yml
+$ cp datatools-server/configurations/default/server.yml.tmp datatools-server/configurations/default/server.yml
 ```
 
 You'll then need to supply Auth0 account information (see below) and API keys for various services used in the application.
