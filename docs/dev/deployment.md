@@ -125,10 +125,10 @@ Package the application using Maven:
 $ mvn package
 ```
 
-Serve the application with Java:
+Deploy the application with Java:
 
 ```bash
-$ java -jar target/dt-`git rev-parse --short HEAD`.jar configurations/default/env.yml configurations/default/server.yml
+$ java -jar target/dt-v1.0.0.jar /path/to/env.yml /path/to/server.yml
 ```
 
 
