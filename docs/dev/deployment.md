@@ -11,8 +11,8 @@ User authentication is done via [Auth0](http://auth0.com). You will need an Auth
 Clone the repo and change to the project directory:
 
 ```bash
-$ git clone https://github.com/conveyal/datatools-ui.git
-$ git clone https://github.com/conveyal/datatools-server.git
+$ git clone https://github.com/etalab/datatools-ui.git
+$ git clone https://github.com/etalab/datatools-server.git
 ```
 
 Copy the included configuration `env` templates for both the server and UI repos:
