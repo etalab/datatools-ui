@@ -8,7 +8,6 @@ DatatoolsNavbar:
   signConfig: eTID Config
   guide: Guide de l'utilisateur
   account: My Account
-  resetPassword: Reset Password
   logout: Fermer une session
   login: Se connecter
 Breadcrumbs:
