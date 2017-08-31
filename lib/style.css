@@ -201,3 +201,13 @@ h4.line:after {
   max-height: 400px;
   overflow-x: hidden;
 }
+
+.logo span {
+    font-style: italic;
+    margin-left: 0.2em;
+    font-size: 17px;
+}
+
+.logo img {
+    width: 80%;
+}
