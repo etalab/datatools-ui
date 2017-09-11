@@ -9,7 +9,7 @@
   "author": "Conveyal LLC",
   "license": "MIT",
   "scripts": {
-    "build": "mastarm build --env production",
+    "build": "mastarm build --minify --env production",
     "cover-client": "npm run test-client -- --coverage --coverage-paths \"lib/**/*.js\"",
     "deploy": "mastarm build --minify --env production && aws s3 cp --recursive --acl public-read dist",
     "lint": "mastarm lint \"lib/**/*.js\"",
